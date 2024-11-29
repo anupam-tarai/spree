@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   # the default of "spree".
   mount Spree::Core::Engine, at: '/'
 
+
   # https://github.com/basecamp/mission_control-jobs?tab=readme-ov-file#basic-configuration
   mount MissionControl::Jobs::Engine, at: "/jobs"
 

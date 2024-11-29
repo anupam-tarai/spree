@@ -42,7 +42,6 @@ gem "tzinfo-data", platforms: %i[ windows jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
-# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 gem "image_processing", "~> 1.13"
 
 group :development, :test do
@@ -83,6 +82,11 @@ gem "spree_frontend"
 gem "spree_auth_devise"
 gem "spree_gateway"
 gem "spree_i18n"
+gem 'deface'
+
 
 # only needed for MacOS and Ruby 3.0
 gem 'sassc', github: 'sass/sassc-ruby', branch: 'master'
+
+gem 'my_custom_extension', path: 'vendor/extensions/my_custom_extension'
+

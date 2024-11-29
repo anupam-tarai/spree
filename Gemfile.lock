@@ -6,6 +6,12 @@ GIT
     sassc (2.4.0)
       ffi (~> 1.9)
 
+PATH
+  remote: vendor/extensions/my_custom_extension
+  specs:
+    my_custom_extension (0.1.0)
+      spree (~> 4.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -145,6 +151,12 @@ GEM
     debug (1.9.2)
       irb (~> 1.10)
       reline (>= 0.3.8)
+    deface (1.9.0)
+      actionview (>= 5.2)
+      nokogiri (>= 1.6)
+      polyglot
+      railties (>= 5.2)
+      rainbow (>= 2.1.0)
     devise (4.9.4)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -292,6 +304,7 @@ GEM
     orm_adapter (0.5.0)
     paranoia (3.0.0)
       activerecord (>= 6, < 8.1)
+    polyglot (0.3.5)
     popper_js (1.16.1)
     psych (5.1.2)
       stringio
@@ -340,6 +353,7 @@ GEM
       rake (>= 12.2)
       thor (~> 1.0, >= 1.2.2)
       zeitwerk (~> 2.6)
+    rainbow (3.1.1)
     rake (13.2.1)
     ransack (4.2.1)
       activerecord (>= 6.1.5)
@@ -563,11 +577,13 @@ DEPENDENCIES
   bootsnap
   capybara
   debug
+  deface
   image_processing (~> 1.13)
   importmap-rails
   jbuilder
   mini_racer
   mission_control-jobs
+  my_custom_extension!
   puma (>= 5.0)
   rails (~> 7.1.4)
   sassc!
